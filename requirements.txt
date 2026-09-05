@@ -1,0 +1,21 @@
+# Core dependencies (pinned for reproducibility)
+edge-tts>=6.0.0
+openai>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+colorama>=0.4.6
+
+# STT backends (pick what you need)
+SpeechRecognition>=3.14.0
+pyaudio>=0.2.14          # for SpeechRecognition mic input
+openai-whisper>=2024.0.0 # offline Whisper STT (heavy — PyTorch dependency)
+
+# TTS fallback (fully offline, no internet)
+pyttsx3>=2.90
+
+# LLM backends
+ollama>=0.1.0            # pip package for Ollama client (Ollama itself is separate)
+
+# Dev / optional
+# flake8>=7.0.0
+# black>=24.0.0
